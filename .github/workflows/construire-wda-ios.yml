@@ -61,10 +61,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: appium/WebDriverAgent
-        repository: appium/WebDriverAgent
-        ref: ${{ inputs.etiquette }}
+          ref: ${{ inputs.etiquette }}
           persist-credentials: false
-
       - name: Prouver l'origine du code AVANT de compiler
         run: |
           set -eu
