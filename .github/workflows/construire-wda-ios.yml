@@ -60,7 +60,8 @@ jobs:
       - name: Checkout de l'étiquette demandée
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.etiquette }}
+          repository: appium/WebDriverAgent
+        ref: ${{ inputs.etiquette }}
           persist-credentials: false
 
       - name: Prouver l'origine du code AVANT de compiler
